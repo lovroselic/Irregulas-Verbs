@@ -1,21 +1,24 @@
 // coded by Lovro Selic , (C) C00lSch00l 2014
-//version 1.01.00
-  
-$(document).ready(function() {
-	$("form").bind("keypress", function (e) {
+//version 1.02.00 - case insensitive
+
+console.clear();
+console.log("Irregular verbs by Lovro Selic, C00lSch00l 2014, version 1.02");
+
+$(document).ready(function () {
+    $("form").bind("keypress", function (e) {
         if (e.keyCode == 13) {
             return false;
         }
     });
 
-    $("#start").click(function() {
+    $("#start").click(function () {
         startUp();
     });
-    $("#howmany").focusout(function() {
+    $("#howmany").focusout(function () {
         var temp = $(this).val();
-		$(this).val(validateInput(temp, 5, 25, 10));
+        $(this).val(validateInput(temp, 5, 25, 10));
     });
-    $("#check").click(function() {
+    $("#check").click(function () {
         checkAnswers();
     });
 
@@ -25,7 +28,7 @@ $(document).ready(function() {
         $("#window").show();
         $("#buttons").fadeIn(400);
         $("#board").fadeIn(400);
-		$("#board")[0].scrollIntoView(true);
+        $("#board")[0].scrollIntoView(true);
         var hard = ['arise', 'arose', 'arisen', 'awake', 'awoke', 'awoken', 'bear', 'bore', 'born ', 'bend', 'bent', 'bent', 'bet', 'bet', 'bet ',
             'bid', 'bid', 'bid', 'bind', 'bound', 'bound', 'bleed', 'bled', 'bled', 'blow', 'blew', 'blown', 'breed', 'bred', 'bred', 'burst',
             'burst', 'burst', 'bust', 'bust', 'bust', 'cast', 'cast', 'cast', 'cling', 'clung', 'clung', 'creep', 'crept', 'crept', 'deal',
@@ -153,7 +156,7 @@ function checkAnswers() {
         colY = thisID[thisID.indexOf('col') + 3];
         solution = complexArray[colY - 1][problem[rowX - 1]];
         typedIn = $("#" + thisID).val();
-        typedIn = typedIn.trim();
+        typedIn = typedIn.trim().toLowerCase();
         if (solution === typedIn) {
             $("#" + thisID).replaceWith("<span class='right'>" + solution + "</span>");
             correctAnswers++;
