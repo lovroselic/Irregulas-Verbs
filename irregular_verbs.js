@@ -1,5 +1,6 @@
 // coded by Lovro Selic , (C) C00lSch00l 2014
 //version 1.02.00 - case insensitive
+//version 1.03 - get got got
 
 console.clear();
 console.log("Irregular verbs by Lovro Selic, C00lSch00l 2014, version 1.02");
@@ -63,7 +64,7 @@ $(document).ready(function () {
             'burnt', 'burnt ', 'write', 'wrote', 'written', 'win', 'won', 'won', 'think', 'thought', 'thought', 'sell', 'sold', 'sold', 'send',
             'sent', 'sent', 'buy', 'bought', 'bought', 'catch', 'caught', 'caught', 'choose', 'chose', 'chosen', 'drink', 'drank', 'drunk',
             'drive', 'drove', 'driven', 'feel', 'felt', 'felt', 'fight', 'fought', 'fought', 'find', 'found', 'found', 'grow', 'grew', 'grown',
-            'give', 'gave', 'given', 'go', 'went', 'gone', 'get', 'got', 'gotten', 'cost', 'cost', 'cost', 'fly', 'flew', 'flown', 'cut', 'cut',
+            'give', 'gave', 'given', 'go', 'went', 'gone', 'get', 'got', 'got', 'cost', 'cost', 'cost', 'fly', 'flew', 'flown', 'cut', 'cut',
             'cut', 'do', 'did', 'done', 'draw', 'drew', 'drawn', 'have', 'had', 'had', 'keep', 'kept', 'kept', 'know', 'knew', 'known', 'leave',
             'left', 'left', 'lose', 'lost', 'lost', 'make', 'made', 'made', 'mean', 'meant', 'meant', 'meet', 'met', 'met', 'pay', 'paid',
             'paid', 'put', 'put', 'put', 'ring', 'rang', 'rung', 'take', 'took', 'taken', 'teach', 'taught', 'taught', 'tell', 'told', 'told',
